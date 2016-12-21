@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">TmbMetro</string>
+    <string name="eligeLinea">Elige una linea</string>
+    <string name="linia">Line</string>
+    <string name="station">Station</string>
+    <string name="charge">Select</string>
+    <string name="track1">Track 1</string>
+    <string name="track2">Track 2</string>
+    <string name="trainnum">TRAIN:</string>
+    <string name="arrival">Arrival</string>
+    <string name="estselec">Select Station</string>
+    <string name="trackSel">Track</string>
+    <string name="hourSele">Hour</string>
+    <string name="estActual">Actual Station</string>
+    <string name="sitActual">Current</string>
+</resources>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:text="PONER ALARMA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvalarmapost"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:textAlignment="center"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:text="10"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/botmas10"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_height="80dp" />
+
+        <Button
+            android:text="15"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/botmas15"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_height="80dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:text="20"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/botmas20"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_height="80dp" />
+
+        <Button
+            android:text="25"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/botmas25"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_height="80dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:text="30"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            style="@style/Widget.AppCompat.Button"
+            android:id="@+id/botmas30"
+            android:layout_height="80dp" />
+
+        <Button
+            android:text="35"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            style="@style/Widget.AppCompat.Button"
+            android:id="@+id/botmas35"
+            android:layout_height="80dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Alarma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvTituloAlarma"
+                    android:layout_weight="1"
+                    android:textSize="24sp"
+                    android:textStyle="normal|bold"
+                    android:textAlignment="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <TextView
+                    android:text="Día"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDiaAlarma"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="10dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:text="Hora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvHora"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:textAlignment="textEnd"
+                    android:paddingRight="10dp"
+                    android:textStyle="normal|bold"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3">
+
+        <Button
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="bottom"
+            android:id="@+id/butBackAlarm"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+        <Button
+            android:text="Kill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/butKillAlarm"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

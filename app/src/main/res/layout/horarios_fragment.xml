@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_horarios"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="classmain.Horarios">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="@string/linia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linia"
+                android:layout_weight="1"
+                android:textAlignment="textStart"
+                android:textSize="24sp"
+                android:layout_marginLeft="20dp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="53dp"
+                tools:layout_editor_absoluteX="0dp"
+                android:id="@+id/spinner1"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:text="@string/station"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/estacion"
+                android:layout_weight="1"
+                android:textAlignment="textStart"
+                android:textSize="24sp"
+                android:layout_marginLeft="20dp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteY="279dp"
+                tools:layout_editor_absoluteX="4dp"
+                android:id="@+id/spinner2"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|end">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:paddingBottom="10dp">
+
+                <Button
+                    android:text="@string/charge"
+                    android:id="@+id/botcarga"
+                    android:layout_height="match_parent"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:text="@string/track1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/botonvia2"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textSize="@dimen/activity_vertical_margin"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:text="@string/track2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/botonvia1"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textSize="@dimen/activity_vertical_margin"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <TextView
+                android:text="@string/trainnum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lbnumtren"
+                android:layout_weight="1"
+                android:gravity="center|start"
+                android:layout_marginLeft="20dp" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/spinnernumtren" />
+
+            <Button
+                android:text="VAL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+                android:id="@+id/seleccionCon" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="@string/arrival"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/lbSeleccion"
+                        android:textAlignment="center"
+                        android:textStyle="normal|bold"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="7">
+
+                    <TextView
+                        android:text="@string/estselec"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/lbestacion"
+                        android:layout_weight="5"
+                        android:textSize="18sp"
+                        android:textAlignment="textStart"
+                        android:textStyle="normal|bold"
+                        android:layout_marginLeft="20dp"
+                        android:maxLines="1"/>
+
+                    <TextView
+                        android:text="@string/trackSel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold"
+                        android:maxLines="1"
+                        android:id="@+id/selecVia"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:text="@string/hourSele"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lbHora"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textAlignment="textEnd"
+                        android:textStyle="normal|bold"
+                        android:paddingEnd="10dp"
+                        android:layout_marginRight="20dp"
+                        android:maxLines="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="@string/sitActual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lbSituacion"
+                        android:layout_weight="1"
+                        android:textStyle="normal|bold"
+                        android:textAlignment="center"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="7">
+
+                    <TextView
+                        android:text="@string/estActual"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:textSize="18sp"
+                        android:textAlignment="textStart"
+                        android:layout_marginLeft="20dp"
+                        android:textStyle="normal|bold"
+                        android:id="@+id/lbEstacionActual" />
+
+                    <TextView
+                        android:text="@string/trackSel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/lbviaactual"
+                        android:layout_weight="1"
+                        android:textSize="18sp"
+                        android:textAlignment="center"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:text="@string/hourSele"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/lbHora2"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold"
+                        android:textAlignment="textEnd"
+                        android:layout_marginRight="20dp"
+                        android:paddingEnd="10dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4">
+
+            <Button
+                android:text="CON"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/conState"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:text="SEL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/selState"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:text="TRACK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/trackState"
+                android:layout_marginRight="10dp"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:text="LOAD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp"
+
+
+                android:id="@+id/reloadBut"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:paddingTop="10dp">
+
+            <Button
+                android:text="LIST ALARM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonListAlarm"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp" />
+
+            <Button
+                android:text="SET ALARM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonSetAlarma"
+                android:layout_weight="1"
+                android:layout_marginRight="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

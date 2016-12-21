@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appname="http://schemas.android.com/apk/res-auto" >
+
+    <item android:id="@+id/alarma"
+        android:icon="@drawable/ic_alarm_add_black_24dp"
+        android:title="Alarma"/>
+    <item android:id="@+id/killAlarma"
+        android:icon="@drawable/ic_alarm_add_black_24dp"
+        android:title="Kill Alarm"/>
+</menu>
